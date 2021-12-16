@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    var puerta = {
+      id: 1,
+      nombre: "puerta de roble",
+      saludos: function(){
+        alert("Saludos!");
+      },
+      precio: 250.50,
+      etiquetas: ["puerta", "madera", "roble", "madera fina", "2003"],
+      hola: function(){
+        alert("Hola!");
+        this.saludos();
+        this.adios();
+      },
+      adios: function(){
+        alert("Adios!")
+      }
+    }
+
+    puerta.hola();
+
+  </script>
+
+</body>
+</html>

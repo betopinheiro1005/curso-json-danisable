@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    var puerta = {
+      id: 1,
+      precio: 250.50,
+      etiquetas: ["puerta", "madera", "roble", "madera fina", "2003"],
+      sumaIVA: function(precio, iva){
+        var res = precio + iva;
+        return res;
+      },
+      venta: true,
+      inventario: null
+    }
+
+    function Casa(valor, terreno, color){
+      // atributos
+      this.valor = valor;
+      this.terreno = terreno;
+      this.color = color;
+
+      // metodos
+      this.darTecho = function(){
+        alert("Todos los habitantes de la casa tienen techo");
+      };
+
+      this.darProteccion = function(){
+        alert("Todos los habitantes de la casa estan protegidos");
+      };
+
+    }
+
+    // creacion de objeto
+    var casa1 = new Casa(350000, 250, "Rojo");
+
+    casa1.noPuertas = 8;
+
+    casa1.contarHabitantes = function(){
+      alert("Hay 20 habitantes");
+    }
+
+    console.log(casa1.noPuertas);
+    casa1.contarHabitantes();
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    var daniel = {
+      nombre: "Daniel",
+      edad: 28,
+      direccion: "Cerrada Nopales No 5"
+    }
+
+    var danielString = JSON.stringify(daniel);
+
+    // Almacenando el obj daniel en el localStorage
+    localStorage.setItem("ObjetoDaniel", danielString);
+
+    // Recuperando el obj daniel del localStorage
+    var datosStorage = localStorage.getItem("ObjetoDaniel");
+
+    alert(datosStorage);
+
+    var danielObj = JSON.parse(datosStorage);
+
+    alert(danielObj.direccion);
+
+  </script>
+
+</body>
+</html>

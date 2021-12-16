@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    var daniel = {
+      nombre: "Daniel",
+      edad: 28,
+      direccion: "Cerrada Nopales No 5",
+      carros: [
+        {nombre: "FORD", modelos: ["Mustang", "Fusion", "F150"]},
+        {nombre: "NISSAN", modelos: ["GTR", "Centra", "Tsuru"]},
+        {nombre: "FERRARI", modelos: ["Enzo", "Maranello", "Carrera"]}
+      ]
+    }
+
+    for(x in daniel.carros){
+      console.log(daniel.carros[x].nombre);
+      for(y in daniel.carros[x].modelos){
+        console.log(daniel.carros[x].modelos[y]);
+      }
+      console.log("=====================");
+    }
+
+  </script>
+
+</body>
+</html>
