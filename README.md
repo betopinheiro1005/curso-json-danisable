@@ -1,5 +1,8 @@
 # Curso de JSON
 ## Danisable (Daniel Jimenez)
+
+### [Vídeos do curso](https://www.youtube.com/watch?v=610E47qZwq4&list=PLAzlSdU-KYwUHFc94UYsEqgita62nz8Ks)
+
 ### Lista de aulas
 
 Aula 04 - Tipos de dados  
